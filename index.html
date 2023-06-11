@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="myscript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Cielo Restaurant</title>
+</head>
+
+<body>
+    <div id="skip"><a href='#main'>Skip to content</a></div>
+    <div id="contentWrapper">
+        <header>
+            <h2 id="logo">Cielo</h2>
+            <nav>
+                <h2 class="sr-only">Main Navigation</h2>
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Private Events</a></li>
+
+                </ul>
+            </nav>
+            <button class="dark-mode" onclick="myFunction()">Dark Mode</button>
+        </header>
+
+        <main id="main">
+            <h1>Dynamic, Contemporary, and Enjoyable Nightlife and Dining Experiences</h1>
+            <img src="images/jason-leung-poI7DelFiVA-unsplash.jpg" alt="">
+        </main>
+
+        <section id="playAndWin">
+            <h3>Win a Free Dessert!</h3>
+            <p>We're so excited for you to try one of our featured desserts. Guess a number from 1 - 10, and if it's
+                correct you'll win a free dessert!</p>
+
+            <div id="numContainer">
+                <label for="guess">Enter a number between 1 and 10:</label>
+                <input type="text" id="guess">
+                <input type="submit" id="submitGuess" value="Check My Guess">
+                <p id="feedback"></p>
+            </div>
+
+        </section>
+
+        <section id="productDisplay">
+            <h2>Featured Desserts</h2>
+            <div id="tabButtons">
+                <button class="tablink" onclick="openPage('chocolateChip', this, 'teal')" id="defaultOpen">Skillet
+                    Cookie
+                    &amp; Ice Cream</button>
+                <button class="tablink" onclick="openPage('campfireSmores', this, 'teal')">Campfire
+                    S&apos;Mores</button>
+                <button class="tablink" onclick="openPage('saltedCaramel', this, 'teal')">Pistachio Ice
+                    Cream</button>
+                <button class="tablink" onclick="openPage('chocolateOreo', this, 'teal')">Chocolate-Oreo
+                    Milkshake</button>
+                <button class="tablink" onclick="openPage('ferreroRocher', this, 'teal')">Ferrero Rocher
+                    Milkshakes</button>
+            </div>
+
+            <div id="chocolateChip" class="tabcontent">
+                <img class="displayImg" src="images/abhishek-hajare-6hr5YZDjyHc-unsplash.jpg" alt="">
+                <div class="displayText">
+                    <h3>Chocolate Chip Cookie With Ice Cream And Hot Fudge</h3>
+                    <p>Warm chocolate chip cookie topped with vanilla ice cream, and hot fudge sauce</p>
+                    <dl>
+                        <dt>Calories:</dt>
+                        <dd> 582 cal</dd>
+                    </dl>
+                    <dl>
+                        <dt>Allergens</dt>
+                        <dd>Milk and Soy</dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="campfireSmores" class="tabcontent">
+                <img class="displayImg" src="images/food-photographer-jennifer-pallian-X2gM-SIufpU-unsplash.jpg" alt="">
+                <div class="displayText">
+                    <h3>Campfire S&apos;Mores Ice Cream</h3>
+                    <p>
+                        Graham cracker ice cream topped with a delicious ripple of marshmallow and rich chocolate
+                        fudge.
+                    </p>
+                    <dl>
+                        <dt>Calories:</dt>
+                        <dd>420 cal</dd>
+                    </dl>
+                    <dl>
+                        <dt>Allergens</dt>
+                        <dd>Milk and Soy</dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="saltedCaramel" class="tabcontent">
+                <img class="displayImg" src="images/nadine-primeau-BLx1Jx8wMig-unsplash.jpg" alt="">
+                <div class="displayText">
+                    <h3>Salted Caramel Ice Cream with Pistachio</h3>
+                    <p>
+                        Sweet creamy vanilla ice cream with a beautiful honey beige color salted caramel and roasted
+                        pistachio topping
+                    </p>
+                    <dl>
+                        <dt>Calories:</dt>
+                        <dd>512 cal</dd>
+                    </dl>
+                    <dl>
+                        <dt>Allergens</dt>
+                        <dd>Milk, Nuts, Soy</dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="chocolateOreo" class="tabcontent">
+                <img class="displayImg" src="images/victor-rutka-4FujjkcI40g-unsplash.jpg" alt="">
+                <div class="displayText">
+                    <h3>Chocolate-Oreo Milkshakes</h3>
+                    <p>Delicious blend of chocolate ice cream, milk, chocolate sauce and topped with an Oreo cookie.
+                    </p>
+                    <dl>
+                        <dt>Calories:</dt>
+                        <dd>677 cal</dd>
+                    </dl>
+                    <dl>
+                        <dt>Allergens</dt>
+                        <dd>Contains: Milk</dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="ferreroRocher" class="tabcontent">
+                <img class="displayImg" src="images/eiliv-aceron-NWTPcPE1nJI-unsplash.jpg" alt="">
+                <div class="displayText">
+                    <h3>Ferrero Rocher Double Chocolate-Marshmallow Milkshakes
+                    </h3>
+                    <p>Vanilla ice cream, Nutella spread, and Ferrero Rocher chocolates to make a decadent Ferrero
+                        Rocher milkshake. Topped with marshmallow and chocolate cookie.</p>
+                    <dl>
+                        <dt>Calories:</dt>
+                        <dd>1245 cal</dd>
+                    </dl>
+                    <dl>
+                        <dt>Allergens</dt>
+                        <dd>Milk, Nuts, Soy</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="privateEvents">
+            <h2>Private Events</h2>
+            <div class="textBackground">
+                <p>Our vibrant restaurant space can be used for intimate gatherings and business functions. Our event
+                    manager will help you plan a flawless and memorable event. For more information or to schedule a
+                    tour, please contact our Events Manager.</p>
+            </div>
+            <img src="images/piotr-szulawski-DCmUhk54F6M-unsplash.jpg" alt="">
+        </section>
+
+        <section id="contactFormContainer">
+            <div>
+                <h2>Send us a message</h2>
+                <p>Need to get in touch with us? Fill out the form with your inquiry and we will get back to you.</p>
+            </div>
+
+            <form>
+                <label class="required" for="fName">Full Name:</label><span></span>
+                <input type="text" name="fName" id="fName" autocomplete="given-name">
+
+                <label class="required" for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+
+                <label class="required" for="tel">Phone</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                <fieldset>
+                    <legend class="required">Prefered Contact Method</legend>
+                    <input type="radio" id="radio_phone" name="radio">
+                    <label for="radio_phone">Phone</label>
+
+                    <input type="radio" id="radio_email" name="radio">
+                    <label for="radio_email">Email</label>
+                </fieldset>
+
+                <label class="required" for="message">Message</label><span></span>
+                <textarea id="message" name="message" rows="4" cols="33"></textarea>
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+            <p id="defaultOutput"></p>
+
+        </section>
+
+        <footer>
+            <small>Copyright &copy;2023 Cielo</small>
+        </footer>
+    </div>
+    <!-- Images are from https://unsplash.com/ -->
+
+</body>
+
+</html>
